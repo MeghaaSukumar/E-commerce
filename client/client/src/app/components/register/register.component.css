@@ -1,0 +1,51 @@
+.container-fluid {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    overflow: auto;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.registration-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    width: 90%;
+}
+
+.card {
+    padding: 40px;
+    width: 32%;
+    border: none;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.heading {
+    font-family: "Bree Serif";
+    font-size: 26px;
+}
+
+.image {
+    height: 80vh;
+    width: 60%;
+}
+
+/* CSS styles for the button */
+button {
+    background-color: orange; /* Set the button background color to orange */
+    color: white; /* Set the button font color to white */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        display: none;
+    }
+}

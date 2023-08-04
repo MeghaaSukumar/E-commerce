@@ -1,0 +1,22 @@
+.payment-container {
+    height: 100vh;
+    overflow: auto;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.img-fluid {
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .img-fluid {
+        width: 100%;
+    }
+}
+
+.card-body {
+    background-color: black; /* Set the background color to black */
+    color: white;
+    border: 1px solid white; /* Add a white border */
+}

@@ -1,0 +1,38 @@
+.list-group {
+    height: 100vh;
+    overflow: auto;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.loader-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #333; /* Optional: Add a dark gray background color to list items */
+    margin-bottom: 10px;
+}
+
+.list-group-item .card {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.list-group-item .card strong {
+    color: white; /* Set the font color of strong elements to white */
+}
+
+.btn {
+    background-color: orange; /* Set the button background color to orange */
+    color: white; /* Set the button font color to white */
+}
+
+.btn:hover {
+    background-color: darkorange; /* Set the hover background color to dark orange */
+}

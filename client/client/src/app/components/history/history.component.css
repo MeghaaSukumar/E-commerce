@@ -1,0 +1,22 @@
+.myorder-container {
+    height: 90vh;
+    width: 100%;
+    overflow: auto;
+    padding: 40px 20px;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.loader-container {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+.card {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+    border: 1px solid white; /* Set the border color to white */
+}

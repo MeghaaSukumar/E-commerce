@@ -1,0 +1,34 @@
+.home-container {
+    height: 90vh;
+    overflow: auto;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.home-section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+@media screen and (max-width: 768px) {
+    .home-section {
+        flex-direction: column;
+    }
+}
+
+/* CSS for the orange button */
+.orange-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.orange-button:hover {
+    background-color: darkorange;
+}

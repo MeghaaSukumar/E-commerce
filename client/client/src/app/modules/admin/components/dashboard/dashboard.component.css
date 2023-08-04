@@ -1,0 +1,42 @@
+
+body {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+.row {
+
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    width: 100%; 
+    overflow: auto;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.loader-container {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.card {
+    box-shadow: 0 0 20px #dddddd;
+    border: 1px solid white; /* Set the border color to white */
+    background-color: black; /* Set the background color to black */
+}
+
+.card-body {
+    color: white; /* Set the font color to white */
+}
+
+.btn-primary {
+    background-color: orange; /* Set the button background color to orange */
+    color: white; /* Set the button font color to white */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: darkorange;
+}

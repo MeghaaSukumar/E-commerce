@@ -1,0 +1,93 @@
+<nav class="navbar navbar-expand-lg navbar-light d-flex align-items-center justify-content-between w-100" *ngIf="!isAdmin">
+  <!-- <a class="navbar-brand" 
+    style="font-weight: bold; color: rgb(93, 93, 253); font-size: 26px; margin-right: 20px;">E-COMM</a> -->
+    <img routerLink="/home" src="data:image/jpeg;base64,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" class="image-logo" alt="logo">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item w-100">
+        <a class="nav-link" routerLink="/home" *ngIf="!isAdmin" routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item w-100">
+        <a class="nav-link" routerLink="/my-cart" routerLinkActive="active">MyCart</a>
+      </li>
+      <li class="nav-item w-100 dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Profile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/login">SignIn/SignUp</a>
+          <a class="dropdown-item" routerLink="/my-orders">MyOrders</a>
+          <a class="dropdown-item" routerLink="/history">History</a>
+          <a class="dropdown-item" (click)="onLogout()">Logout</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+
+<!-- Admin -->
+
+<nav class="navbar navbar-expand-lg navbar-light d-flex flex-row justify-content-between" *ngIf="isAdmin">
+  <!-- <a class="navbar-brand" 
+    style="font-weight: bold; color: rgb(93, 93, 253); font-size: 26px;">E-COMM</a> -->
+    <img routerLink="/admin/dashboard" src="data:image/jpeg;base64,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">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto d-flex align-items-center justify-content-between w-100">
+      <li class="nav-item w-100">
+        <a class="nav-link d-lg-none" routerLink="/admin/dashboard" routerLinkActive="active">Dashboard <span
+            class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item w-100">
+        <a class="nav-link d-lg-none" routerLink="/admin/products" routerLinkActive="active">Products <span
+            class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item w-100">
+        <a class="nav-link d-lg-none" routerLink="/admin/add-products" routerLinkActive="active">Add Products</a>
+      </li>
+      <li class="nav-item w-100">
+        <a class="nav-link d-lg-none" routerLink="/admin/add-categories" routerLinkActive="active">Add Categories</a>
+      </li>
+      <li class="nav-item w-100">
+        <a class="nav-link d-lg-none" routerLink="/admin/orders" routerLinkActive="active">Orders</a>
+      </li>
+      <li class="nav-item w-100">
+        <a class="nav-link d-lg-none" routerLink="/admin/feedback" routerLinkActive="active">Feedback</a>
+      </li>
+      <li class="nav-item w-100">
+        <a class="nav-link d-lg-none" routerLink="/admin/payment" routerLinkActive="active">Payment</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Profile
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" (click)="onLogout()">Logout</a>
+
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</nav>

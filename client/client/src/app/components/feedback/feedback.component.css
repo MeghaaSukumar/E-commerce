@@ -1,0 +1,49 @@
+.feedback-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    overflow: auto;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.card {
+    padding: 40px;
+    width: 50%;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+    border: 1px solid white; /* Add a white border */
+}
+
+.form-group label {
+    color: white; /* Set the label font color to white */
+}
+
+.form-control {
+    background-color: black; /* Set the input background color to black */
+    color: white; /* Set the input font color to white */
+    border: 1px solid white; /* Add a white border to the inputs */
+}
+
+.form-control::placeholder {
+    color: white; /* Set the placeholder font color to white */
+}
+
+.error-user,
+.error-message {
+    color: orange; /* Set the error message font color to orange */
+}
+
+.btn-primary {
+    background-color: orange; /* Set the button background color to orange */
+    color: white; /* Set the button font color to white */
+    border: none; /* Remove the button border */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: darkorange; /* Change the button background color on hover */
+}

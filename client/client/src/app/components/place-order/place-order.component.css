@@ -1,0 +1,68 @@
+.update-add-product-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+
+  .card {
+    background-color: black;
+    color: white;
+    width: 50%;
+    border: 1px solid white; /* Set the border color to white */
+}
+
+  @media screen and (max-width:768px) {
+    .card{
+        width: 90%;
+    }
+  }
+
+  .back-button{
+    width: 50%;
+  }
+  @media screen and (max-width:768px) {
+    .back-button{
+        width: 90%;
+    }
+  } 
+
+  .loader-container{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-message-container{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-message{
+  border-radius: 10px;
+  width: 500px;
+}
+
+.text-success{
+  font-size: 36px;
+  font-weight: bold;
+}
+/* CSS for the orange button */
+.orange-button {
+  background-color: orange; /* Set the background color to orange */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.orange-button:hover {
+  background-color: darkorange;
+}

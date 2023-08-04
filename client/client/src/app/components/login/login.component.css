@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    width: 80%;
+    background-color: black; /* Set the background color to black */
+}
+
+.card {
+    padding: 40px;
+    width: 36%;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+    border: none;
+}
+
+.heading {
+    font-family: "Bree Serif";
+    font-size: 26px;
+    color: white; /* Set the font color to white */
+}
+
+.image {
+    height: 50vh;
+    width: 44%;
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        display: none;
+    }
+}
+
+/* CSS styles for buttons */
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}

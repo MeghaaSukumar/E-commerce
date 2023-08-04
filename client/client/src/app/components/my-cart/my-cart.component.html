@@ -1,0 +1,33 @@
+<div class="loader-container w-100" *ngIf="isLoading">
+    <app-loader-spinner></app-loader-spinner>
+</div>
+<div class="cartlist-container" *ngIf="!isLoading">
+    <h1 style="color: white; font-size: 38px; font-weight: bold;" class="ml-4 mt-4">My Cart</h1>
+    <h1 style="color: white;">Total Items in Cart: {{ totalItems }}</h1>
+    <div class="container" *ngIf="cartList.length === 0">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKY-gZLlI3zIeeftBkk8-rMX5kp0U9ESwsJw&usqp=CAU"
+                    alt="No Cart Items" class="img-fluid">
+                <h3 class="mt-3" style="color: white; font-weight: bold;">No Cart Items</h3>
+                <p style="color: #787878;">Your cart is empty. Start shopping now!</p>
+            </div>
+        </div>
+    </div>
+    <ul class="cart-list mt-4" *ngFor="let item of cartList">
+        <li class="cart-item">
+            <div class="cart-details w-100">
+                <img src="{{item.image}}" alt="{{item.productname}}" class="image"
+                    routerLink="/product-details/{{item._id}}">
+                <div class="ml-2">
+                    <h3>{{item.productname}}</h3>
+                    <p>Price: {{item.price}} /-</p>
+                    <button class="btn btn-primary" routerLink="/place-order/{{item._id}}">Buy this product</button>
+                </div>
+            </div>
+            <div>
+                <button type="button" (click)="onRemove(item._id)" class="btn"><i class="fa fa-times"></i></button>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,11 @@
+.navbar {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.nav-link {
+    color: white !important; /* Set the font color of the links to white */
+}

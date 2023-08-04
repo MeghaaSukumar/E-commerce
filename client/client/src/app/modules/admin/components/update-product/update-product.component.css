@@ -1,0 +1,52 @@
+.update-add-product-container {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    overflow: auto;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.update-add-product-form-container {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .update-add-product-form-container {
+        flex-direction: column;
+    }
+}
+
+.update-card {
+    width: 100%;
+    padding: 40px;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+@media screen and (max-width:768px) {
+    .update-card {
+        border: 0;
+        padding: 30px;
+    }
+}
+
+.update-heading {
+    font-family: "Bree Serif";
+    font-size: 26px;
+    color: white; /* Set the font color to white */
+}
+.orange-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.orange-button:hover {
+    background-color: darkorange;
+}

@@ -1,0 +1,55 @@
+.main-container {
+    height: 100vh;
+    overflow: auto;
+    width: 100%;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.products-container {
+    width: 100%;
+    display: flex;
+}
+
+.products-list-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .products-list-container {
+        width: 100%;
+    }
+}
+
+.card {
+    width: 16rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 48%;
+    }
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.loader-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the font color to white */
+}
+
+.card-img-top {
+    max-height: 240px;
+}
